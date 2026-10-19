@@ -1,0 +1,13 @@
+[phases.build]
+cmds = []
+
+[phases.setup]
+nixPkgs = [
+    "php83",
+    "php83Packages.composer",
+    "php83Extensions.mysqli",
+    "php83Extensions.pdo_mysql",
+    "php83Extensions.pdo",
+    "php83Extensions.mbstring",
+    "php83Extensions.openssl"
+]
